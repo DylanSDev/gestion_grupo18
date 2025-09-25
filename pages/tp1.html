@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-p" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestión de Procesos | Arca Continental - Grupo 18</title>
+    <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/tp1.css" />
     <link
       rel="icon"
@@ -14,13 +15,16 @@
   <body>
     <nav class="navbar">
       <div class="nav-container">
-        <a href="#inicio" class="nav-logo">Gestión - Grupo 18</a>
+        <a href="../index.html" class="nav-logo">Gestión - Grupo 18</a>
         <div class="nav-menu">
-          <a href="#inicio" class="nav-link">Inicio</a>
-          <a href="#proceso" class="nav-link">Proceso</a>
-          <a href="#mejora" class="nav-link">Mejora</a>
-          <a href="#comparacion" class="nav-link">UML vs BPMN</a>
-          <a href="#integrantes" class="nav-link">Integrantes</a>
+          <a href="../index.html#inicio" class="nav-link">Inicio</a>
+          <a href="../index.html#la-materia" class="nav-link">La Materia</a>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Trabajos Prácticos</button>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item" target="_blank">TP N°1: BPMN</a>
+            </div>
+          </div>
         </div>
         <div class="nav-toggle">
           <span></span>
@@ -36,21 +40,17 @@
         <div class="hero-container">
           <div class="hero-badge">Universidad Tecnológica Nacional</div>
           <h1 class="hero-title">
-            Análisis y Mejora de Procesos
-            <span class="text-primary">- Arca Continental</span>
+            Trabajo Práctico Nº1:
+            <span class="text-primary">- BPMN</span>
           </h1>
           <p class="hero-description">
             Infografía interactiva del Trabajo Práctico N°1, donde analizamos un
             proceso de negocio real y proponemos mejoras utilizando BPMN.
           </p>
-          <div class="hero-buttons">
-            <a href="#organizacion" class="btn btn-primary">Ver Análisis</a>
-            <a href="#integrantes" class="btn btn-outline">Conocer al Equipo</a>
-          </div>
         </div>
       </section>
 
-      <section class="section fade-in" id="organizacion">
+      <section class="section" id="organizacion">
         <div class="container">
           <div class="section-header">
             <h2>1. La Organización: Arca Continental</h2>
@@ -61,25 +61,33 @@
               <div class="intro-icon">💎</div>
               <h3>Misión</h3>
               <p>
-                Generar el máximo valor para clientes y consumidores a través de
-                la excelencia operativa y satisfaciendo sus expectativas en todo
-                momento.
+                Generar el máximo valor para nuestros clientes, colaboradores,
+                comunidades y accionistas, satisfaciendo en todo momento y con
+                excelencia las expectativas de nuestros consumidores.
               </p>
             </div>
             <div class="intro-card solution">
               <div class="intro-icon">📈</div>
               <h3>Visión</h3>
               <p>
-                Ser la empresa líder en todas las ocasiones de consumo de
-                bebidas y alimentos en sus mercados, operando de forma rentable
+                Ser líderes en todas las ocasiones de consumo de bebidas y
+                alimentos en los mercados donde participamos, de forma rentable
                 y sustentable.
+              </p>
+            </div>
+            <div class="intro-card">
+              <div class="intro-icon">🤝</div>
+              <h3>Valores</h3>
+              <p>
+                Orientación al cliente, integridad, desarrollo del capital
+                humano, sustentabilidad y responsabilidad social.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section fade-in" id="proceso">
+      <section class="section" id="proceso">
         <div class="container">
           <div class="section-header">
             <h2>2. Proceso: Reparación de Equipos de Frío</h2>
@@ -123,7 +131,7 @@
         </div>
       </section>
 
-      <section class="section fade-in" id="bpmn">
+      <section class="section" id="bpmn">
         <div class="container">
           <div class="section-header">
             <h2>3. Diagrama BPMN del Proceso Actual</h2>
@@ -193,7 +201,7 @@
         </div>
       </section>
 
-      <section class="section fade-in" id="mejora">
+      <section class="section" id="mejora">
         <div class="container">
           <div class="section-header">
             <h2>4. Propuesta de Mejora: Sistema "ColdTrack"</h2>
@@ -230,7 +238,7 @@
         </div>
       </section>
 
-      <section class="section fade-in" id="comparacion">
+      <section class="section" id="comparacion">
         <div class="container">
           <div class="section-header">
             <h2>5. Comparativa Clave: UML vs. BPMN</h2>
@@ -297,6 +305,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
-    <script src="../js/tp1.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
