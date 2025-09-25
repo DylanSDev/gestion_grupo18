@@ -573,3 +573,25 @@ html {
 .group-name {
   font-weight: 600;
 }
+
+/* === NUEVAS REGLAS PARA EL IFRAME RESPONSIVO === */
+
+/* Estilo por defecto (para pantallas grandes/desktop) */
+#bpmn iframe {
+  width: 100%;
+  height: 1293px; /* Altura grande para monitores */
+  border: none;
+}
+
+/* Regla para dispositivos móviles (Max-width: 768px) */
+@media (max-width: 768px) {
+  #bpmn iframe {
+    height: 80vh; /* Altura reducida y responsiva para teléfonos */
+  }
+}
+
+.bpmn-iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
