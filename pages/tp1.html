@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Procesos | Arca Continental - Grupo 18</title>
+    <link rel="stylesheet" href="../styles/tp1.css" />
+    <link
+      rel="icon"
+      href="https://frt.utn.edu.ar/wp-content/uploads/2025/09/cropped-favicom-1-192x192.png"
+      sizes="192x192"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="nav-logo">Gestión - Grupo 18</a>
+        <div class="nav-menu">
+          <a href="#inicio" class="nav-link">Inicio</a>
+          <a href="#proceso" class="nav-link">Proceso</a>
+          <a href="#mejora" class="nav-link">Mejora</a>
+          <a href="#comparacion" class="nav-link">UML vs BPMN</a>
+          <a href="#integrantes" class="nav-link">Integrantes</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero section" id="inicio">
+        <div id="tsparticles"></div>
+        <div class="hero-container">
+          <div class="hero-badge">Universidad Tecnológica Nacional</div>
+          <h1 class="hero-title">
+            Análisis y Mejora de Procesos
+            <span class="text-primary">- Arca Continental</span>
+          </h1>
+          <p class="hero-description">
+            Infografía interactiva del Trabajo Práctico N°1, donde analizamos un
+            proceso de negocio real y proponemos mejoras utilizando BPMN.
+          </p>
+          <div class="hero-buttons">
+            <a href="#organizacion" class="btn btn-primary">Ver Análisis</a>
+            <a href="#integrantes" class="btn btn-outline">Conocer al Equipo</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="organizacion">
+        <div class="container">
+          <div class="section-header">
+            <h2>1. La Organización: Arca Continental</h2>
+            <p>Una de las embotelladoras de Coca-Cola más grandes del mundo.</p>
+          </div>
+          <div class="intro-grid">
+            <div class="intro-card problem">
+              <div class="intro-icon">💎</div>
+              <h3>Misión</h3>
+              <p>
+                Generar el máximo valor para clientes y consumidores a través de
+                la excelencia operativa y satisfaciendo sus expectativas en todo
+                momento.
+              </p>
+            </div>
+            <div class="intro-card solution">
+              <div class="intro-icon">📈</div>
+              <h3>Visión</h3>
+              <p>
+                Ser la empresa líder en todas las ocasiones de consumo de
+                bebidas y alimentos en sus mercados, operando de forma rentable
+                y sustentable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="proceso">
+        <div class="container">
+          <div class="section-header">
+            <h2>2. Proceso: Reparación de Equipos de Frío</h2>
+            <p>
+              Un flujo de trabajo clave para garantizar la operatividad de los
+              clientes.
+            </p>
+          </div>
+          <div class="patterns-grid">
+            <div class="pattern-card">
+              <div class="pattern-header">
+                <div class="pattern-icon">🎯</div>
+                <div><h3>Objetivo del Proceso</h3></div>
+              </div>
+              <p>
+                Garantizar una reparación eficiente en tiempo razonable para
+                minimizar el impacto en el punto de venta del cliente.
+              </p>
+            </div>
+            <div class="pattern-card">
+              <div class="pattern-header">
+                <div class="pattern-icon">👥</div>
+                <div><h3>Actores Principales</h3></div>
+              </div>
+              <p>
+                Cliente, Vendedor, Jefe de Ventas, Administración y Proveedores
+                (Técnicos).
+              </p>
+            </div>
+            <div class="pattern-card">
+              <div class="pattern-header">
+                <div class="pattern-icon">✅</div>
+                <div><h3>Actividades Clave</h3></div>
+              </div>
+              <p>
+                Reporte de falla, generación de orden, asignación a proveedor,
+                reparación y pago del servicio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="bpmn">
+        <div class="container">
+          <div class="section-header">
+            <h2>3. Diagrama BPMN del Proceso Actual</h2>
+            <p>
+              Visualización del flujo de trabajo que muestra la interacción
+              entre roles y las demoras existentes.
+            </p>
+          </div>
+          <div class="bpmn-container">
+            <div class="bpmn-lane">
+              <div class="bpmn-lane-title">Cliente</div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-event"><span>Inicio</span></div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Informar falla</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Firmar conformidad</div>
+              </div>
+            </div>
+            <div class="bpmn-lane">
+              <div class="bpmn-lane-title">Ventas</div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Generar Triplicado</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Solicitar Firma Gerente</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Enviar a Admin.</div>
+              </div>
+            </div>
+            <div class="bpmn-lane">
+              <div class="bpmn-lane-title">Admin.</div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Cargar datos</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Asignar proveedor</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Confirmar pago</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-event end"><span>Fin</span></div>
+              </div>
+            </div>
+            <div class="bpmn-lane">
+              <div class="bpmn-lane-title">Técnico</div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Dirigirse al local</div>
+                <div class="bpmn-arrow"></div>
+              </div>
+              <div class="bpmn-element">
+                <div class="bpmn-shape bpmn-task">Realizar reparación</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="mejora">
+        <div class="container">
+          <div class="section-header">
+            <h2>4. Propuesta de Mejora: Sistema "ColdTrack"</h2>
+            <p>
+              Una solución digital para automatizar y optimizar el ciclo de
+              reparaciones.
+            </p>
+          </div>
+          <div class="structure-grid">
+            <div class="structure-card">
+              <div class="card-icon">📡</div>
+              <h3>Detección con IoT</h3>
+              <p>
+                Sensores en los equipos para detectar fallas automáticamente.
+              </p>
+            </div>
+            <div class="structure-card">
+              <div class="card-icon">📱</div>
+              <h3>Digitalización y Agilidad</h3>
+              <p>
+                Reemplazo de órdenes físicas por documentos digitales y firmas
+                electrónicas.
+              </p>
+            </div>
+            <div class="structure-card">
+              <div class="card-icon">🗺️</div>
+              <h3>Trazabilidad Total</h3>
+              <p>
+                Plataforma centralizada para seguir en tiempo real el estado de
+                la reparación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="comparacion">
+        <div class="container">
+          <div class="section-header">
+            <h2>5. Comparativa Clave: UML vs. BPMN</h2>
+            <p>
+              Dos lenguajes de modelado con enfoques y audiencias diferentes.
+            </p>
+          </div>
+          <div class="comparison-container">
+            <div class="comparison-item">
+              <div class="comparison-icon">👥</div>
+              <div>
+                <h3>Enfoque y Audiencia</h3>
+                <p>
+                  BPMN está orientado a procesos de negocio y es comprensible
+                  para todos los roles (gerentes, analistas, TI). UML es más
+                  técnico, enfocado en el diseño de sistemas de software.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-item">
+              <div class="comparison-icon">🔷</div>
+              <div>
+                <h3>Notación Específica</h3>
+                <p>
+                  BPMN ofrece símbolos estandarizados para la lógica de negocio
+                  (eventos, compuertas, roles), siendo más expresivo para los
+                  flujos de trabajo que UML.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-item">
+              <div class="comparison-icon">👍</div>
+              <div>
+                <h3>Ventaja Principal de BPMN</h3>
+                <p>
+                  Su simplicidad visual e intuición lo convierten en una
+                  herramienta superior para analizar, comunicar y mejorar
+                  procesos en un contexto empresarial.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <div class="logo-icon">UTN</div>
+            <div class="logo-text">
+              <p class="university-name">Universidad Tecnológica Nacional</p>
+              <p class="faculty-name">Facultad Regional Tucumán</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="group-name">Grupo N°18</p>
+          <p class="subject-name">Cátedra de Gestión y Proceso de Negocio</p>
+          <p class="year">2025</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="../js/tp1.js"></script>
+  </body>
+</html>
